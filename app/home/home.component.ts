@@ -1,10 +1,12 @@
-class HomeController implements ng.IController {
+import {IComponentOptions, IController} from 'angular';
+
+class HomeController implements IController {
     welcome:string='hello ng';
     constructor() {
     }
 }
 
-export class HomeComponent implements ng.IComponentOptions {
+export class HomeComponent implements IComponentOptions {
     static NAME: string = 'homeView';
     controller: any;
     templateUrl: any;

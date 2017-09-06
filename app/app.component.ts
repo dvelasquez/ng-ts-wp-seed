@@ -1,12 +1,15 @@
-class AppController implements ng.IController {
+import {IComponentOptions, IController} from 'angular';
+import {StateService} from 'angular-ui-router';
+
+class AppController implements IController {
     static $inject: string[] = ['$state'];
 
-    constructor(public $state: ng.ui.IStateService) {
+    constructor(public $state: StateService) {
         $state.go('app.home');
     }
 }
 
-export class AppComponent implements ng.IComponentOptions {
+export class AppComponent implements IComponentOptions {
     static NAME: string = 'appView';
     controller: any;
     templateUrl: any;

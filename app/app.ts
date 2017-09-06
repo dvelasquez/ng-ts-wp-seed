@@ -2,13 +2,13 @@ import {module, element, bootstrap, ILogService} from 'angular';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
 import {UserService} from './services/user.services';
-
+import {StateProvider, UrlRouterProvider} from 'angular-ui-router';
 import './app.less';
 
 export let app = module('app', [
     'ui.router'
 ])
-    .config(['$stateProvider', '$urlRouterProvider', ($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) => {
+    .config(['$stateProvider', '$urlRouterProvider', ($stateProvider: StateProvider, $urlRouterProvider: UrlRouterProvider) => {
         $stateProvider.state({
             name: 'app',
             url: '/app',
