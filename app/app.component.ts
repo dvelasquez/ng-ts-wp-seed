@@ -1,5 +1,5 @@
 import {IComponentOptions, IController} from 'angular';
-import {StateService} from 'angular-ui-router';
+import {StateService} from '@uirouter/angularjs';
 
 class AppController implements IController {
     static $inject: string[] = ['$state'];

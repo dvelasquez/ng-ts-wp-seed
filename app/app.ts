@@ -2,7 +2,7 @@ import {module, element, bootstrap, ILogService} from 'angular';
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
 import {UserService} from './services/user.services';
-import {StateProvider, UrlRouterProvider} from 'angular-ui-router';
+import {StateProvider, UrlRouterProvider} from '@uirouter/angularjs';
 import './app.less';
 
 export let app = module('app', [

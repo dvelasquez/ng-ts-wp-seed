@@ -12,7 +12,7 @@ module.exports = {
         ],
         vendor: [
             'angular/angular.js',
-            'angular-ui-router/release/angular-ui-router.js',
+            '@uirouter/angularjs/release/ui-router-angularjs.js',
             'angular-sanitize'
         ]
     },
